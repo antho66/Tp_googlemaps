@@ -1,0 +1,114 @@
+<html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Maps Festival</title>
+</head>
+<body>
+    
+
+    <div id="map"></div>
+
+
+
+
+
+    <div id="info">
+
+        <button id="administrateur">Administrateur</button>
+        <button id="client">Client</button>
+
+     <h1>Maps Festival</h1>
+     
+     <!-- <h3>Viens toi aussi indique ton festival tent attendu </h3> -->
+   
+    <form id="register">
+        
+                <label >Nom :</label>
+                <input type="text" id="title" value="testsq">
+                
+                <label >Latitude :</label>
+                <input type="text" id="lat" value="42.89206418807338">
+
+                <label >Longitude :</label>
+                <input type="text" id="long" value="2.6806640625">
+
+                <label >Date de debut :</label>
+                <input type="text" id="date_debut" value="09/10/2017">
+
+                <label >Date de fin :</label>
+                <input type="text" id="date_fin" value="10/10/2017">
+
+                <label>Type de musique :</label>
+
+            <div class="choix">
+
+                    <label>Rock </label>
+                    <input class="son" type="checkbox" value="rock" checked>
+
+                    <label>Pop</label>
+                    <input class="son" type="checkbox" value="pop">
+                    
+                    <label>Metal</label>
+                    <input class="son" type="checkbox" value="metal">
+            
+            </div>
+
+
+         <div class="logo">
+
+                    <label >Logo :</label>
+
+            <input type="text" id="logo" value="http://www.pngmart.com/files/1/Rainbow-PNG-Transparent-Image.png">
+
+            <input type="submit" value="valider" id="fini">
+
+    </div>
+    
+   
+    
+         
+ </form>
+
+   <div class="filtre">
+
+            <label > Recherche par le nom de l'évenement ou Par date </label> 
+
+            <input id="searchname" type="text" name="festival" placeholder="Nom de l'évenement">
+            <input id="searchdated"type="text" placeholder="Date de but" >
+
+            <label > recheche  les type de musique</label> 
+            <br />
+
+            <label>rock</label>
+            <input type="checkbox" value="rock">
+            <br />
+
+            <label> pop</label>
+                <input type="checkbox" value="pop">
+            <br />
+
+            <label> metal</label>
+            <input type="checkbox"  value="metal">
+
+    </div>
+
+        <div class="errors">
+                
+                    </div>
+    </div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/App.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnL5cK41AxWg3GitjQiU_dQSRLU30looI&libraries=geometry&callback=app.initMap"
+async defer></script>
+</body>
+</html>

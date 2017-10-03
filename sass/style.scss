@@ -1,0 +1,26 @@
+html, body{
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    
+}
+
+#map{
+    height: auto;
+    width: 70%;
+}
+
+#formulaire{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+input{
+    margin: 30px;
+}
